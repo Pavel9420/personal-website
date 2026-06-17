@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezaul Islam Pavel | Personal Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(rgba(17,24,39,0.85), rgba(17,24,39,0.85)),
+      url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") center/cover no-repeat;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 60px 50px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      color: #111827;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 70px 50px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      color: #111827;
+      margin-bottom: 40px;
+    }
+
+    .about, .education, .project-special {
+      background: white;
+      border-radius: 15px;
+      padding: 35px;
+      max-width: 1000px;
+      margin: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+
+    .card p, .card li {
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skill {
+      background: #111827;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+      background: #111827;
+      color: white;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #020617;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+
+      nav a {
+        margin: 6px;
+        display: inline-block;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      section {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Pavel Portfolio</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hello, I am <span>Rezaul Islam Pavel</span></h1>
+      <p>
+        I am a CSE student, entrepreneur and technology enthusiast. I enjoy creating useful digital solutions,
+        learning new technologies and building web-based projects that solve real-life problems.
+      </p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>
+        My name is Rezaul Islam Pavel. I am currently studying Computer Science and Engineering.
+        I am interested in web development, software solutions, digital business and project management.
+        My goal is to improve my technical skills and use technology to create smart, practical and user-friendly solutions.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education">
+      <p><b>University:</b> Southeast University</p>
+      <p><b>Department:</b> Computer Science and Engineering</p>
+      <p><b>Program:</b> B.Sc. in CSE</p>
+      <p><b>Area of Interest:</b> Web Development, Software Engineering, Database and Information Technology</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Java</div>
+      <div class="skill">Database</div>
+      <div class="skill">Web Design</div>
+      <div class="skill">Digital Marketing</div>
+      <div class="skill">Project Management</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3>Training Center Website</h3>
+        <p>
+          A responsive webpage designed for a training academy. It includes a navbar, hero section,
+          course details, enroll button and footer.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Pharmacy Management System</h3>
+        <p>
+          A software idea for managing medicine stock, sales, purchase records, billing and daily reports
+          for pharmacy businesses.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Student Result Management</h3>
+        <p>
+          A project concept for storing student information, marks, grades and academic reports using
+          a simple digital system.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="training-project">
+    <h2 class="section-title">Project Description</h2>
+    <div class="project-special">
+      <h3>Training Center Website Project</h3>
+      <p>
+        This project is a personal web design assignment where I created a training center website using HTML and CSS.
+        The main purpose of this project is to present course information in a clean and attractive way.
+      </p>
+      <p>
+        The website includes a header with navigation menu, a hero section with a catchy slogan,
+        an enroll button, a course section and a footer with quick links.
+      </p>
+      <p>
+        Three courses are displayed in this project: Beginner Course, Intermediate Course and Advanced Course.
+        Each course contains duration, fee and a short description. The design also uses smooth scrolling,
+        card layout and responsive styling to make the website more user-friendly.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title" style="color:white;">Contact Me</h2>
+    <p><b>Email:</b> pavel9420@gmail.com</p>
+    <p><b>GitHub:</b> github.com/Pavel9420</p>
+    <p><b>Location:</b> Bangladesh</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Rezaul Islam Pavel. All Rights Reserved.</p>
+    <br>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </footer>
+
+</body>
+</html>
